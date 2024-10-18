@@ -1,0 +1,49 @@
+/* Custom Styles for the Indian Restaurant Webpage */
+
+.hero-section {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+#menu .card {
+    margin-bottom: 20px;
+}
+
+/* Add some padding for the section titles */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #007bff; /* Bootstrap primary color */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+footer h5 {
+    font-weight: bold; /* Make heading bold */
+}
+
