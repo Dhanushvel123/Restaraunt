@@ -1,0 +1,212 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+      footer {
+    background-color: #007bff; /* Bootstrap primary color */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+footer h5 {
+    font-weight: bold; /* Make heading bold */
+}
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height: 80px;">
+  <div class="container-fluid">
+    <a class="navbar-brand " im  href="index.html"><img src="B Images/home loggo.png" alt="" width="140" height="110"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white fs-4 p-3" aria-current="page"   href="index.html"><img src="B Images/home icon.png" style="vertical-align: middle;height: 28;" >Home</a>
+        </li>
+        <br>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active text-white fs-4 p-3" aria-current="page" href="About project.html"><img width="23" height="19" style="vertical-align: baseline;" src="https://img.icons8.com/ios-filled/20/about.png" alt="about"/>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white  fs-4 p-3" href="variety.html"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/thanksgiving.png" alt="thanksgiving"/>Foods</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white  fs-4 p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <img src="B Images/login icon.png"  width="25" height="22" alt=""> Login pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="admin.html"><img width="18" height="17" style="vertical-align: middle;" src="https://img.icons8.com/ios-glyphs/20/administrator-male.png" alt="administrator-male"/>Admin login</a></li>
+            <li><a class="dropdown-item" href="boostrap login.html"><img width="17" height="18" src="https://img.icons8.com/fluency-systems-filled/20/user.png" alt="user"/>User login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="register.html"><img src="B Images/register icon.png"  width="17" height="18" alt="">Register</a></li>
+          </ul>
+          <li class="nav-item">
+              <a class="nav-link text-white  fs-4 p-3" href="contact.html"><img src="B Images/contact.png" alt="" width="22" height="22">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white  fs-4 p-3" href="cart.html"><img src="B Images/cart.icon.png" alt="" width="22" height="22">Cart</a>
+            </li>
+             </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" list="suggestions" multiple pattern="[A-Za-z]+" placeholder="Search for Products" spellcheck="true" autocomplete="on" autofocus aria-label="Search">
+
+        <datalist style="visibility: hidden;" id="suggestions">
+          <option value="user name">
+            <option value="email address">
+              <option value="password">
+                <option value="Mobile number">
+                  <option value="login">
+                  
+        </datalist>
+        
+       
+<button type="button"  class="btn btn-outline-secondary text-white" style="background-color: green;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Search Results</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    You searched for the ....
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Okay</button>
+    </div>
+  </div>
+</div>
+</div>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+
+<section class="vh-100">
+  <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-lg">
+                  <div class="card-body p-5 text-center">
+
+                      <h3 class="mb-5 text-primary">User Login</h3>
+
+                      <form class="row g-3 needs-validation" novalidate>
+                          <div class="col-md-4 position-relative" >
+                            <label for="validationTooltip01" class="form-label text-success fw-bold" style="margin-right: 30%;">User name</label>
+                            <input type="text" class="form-control" id="validationTooltip01" style="width: 320%;" value="" placeholder="Enter your first name" required>
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                          </div>
+
+                          <div class="g-3 position-relative">
+                              <label for="validationTooltip02" class="form-label text-success fw-bold" style="margin-right: 75%;">Email address</label>
+                              <input type="email" class="form-control" id="validationTooltip02" style="width: 98%;" value=""  placeholder="Enter your Email" required>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="g-3 position-relative">
+                              <label for="validationTooltip02" class="form-label text-success fw-bold" style="margin-right: 75%;">password</label>
+                              <input type="password" class="form-control" id="validationTooltip02" style="width: 98%;" value=""  placeholder="Enter your password" required>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+
+                            <div class="g-3 position-relative">
+                              <label for="validationTooltip02" class="form-label text-success fw-bold" style="margin-right: 67%;">Mobile number</label>
+                              <input type="number" class="form-control" id="validationTooltip02" style="width: 99%;" value=""  placeholder="Enter Mobile number" required>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                           
+<button type="button"  class="bg-success btn text-light col-3 " type="submit" style="width: 20%; margin-left: 35%;" data-bs-toggle="modal" data-bs-target="#submit">
+  Submit <form action=""></form>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login Results</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Loggined Successfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="mt-4">
+    <a href="register.html" class="text-muted">Didn't you already register ?</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<footer class="bg-primary text-white mt-5 py-4">
+ <div class="container">
+     <div class="row">
+         <div class="col-md-4 mb-3">
+             <h5>Contact Us</h5>
+             <p>Email: info@indianrestaurant.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Main St,Chennai,India</p>
+         </div>
+         <div class="col-md-4 mb-3">
+             <h5>Follow Us</h5>
+             <a href="#" class="text-white me-3">
+              <img width="25" height="25" src="https://img.icons8.com/ios-filled/25/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+              </a>
+             <a href="#" class="text-white me-3">
+                 <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" width="24" height="24" alt="Facebook"/>
+             </a>
+             <a href="#" class="text-white me-3">
+                 <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" width="24" height="24" alt="Instagram"/>
+             </a>
+             <a href="#" class="text-white me-3">
+                 <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" width="24" height="24" alt="Twitter"/>
+             </a>
+         </div>
+         <div class="col-md-4 mb-3">
+             <h5>Quick Links</h5>
+             <ul class="list-unstyled">
+                 <li><a href="projectbootstrap.html" class="text-white">Home</a></li>
+                 <li><a href="About project.html" class="text-white">About</a></li>
+                 <li><a href="variety.html" class="text-white">Foods</a></li>
+                 <li><a href="contact.html" class="text-white">Contact</a></li>
+             </ul>
+         </div>
+     </div>
+     <div class="text-center mt-3">
+         <p>&copy; 2024 Indian Restaurant. All rights reserved.</p>
+     </div>
+ </div>
+</footer>

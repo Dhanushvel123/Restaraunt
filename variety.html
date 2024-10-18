@@ -1,0 +1,930 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+  span{
+    color:mediumblue;
+  }
+  span:hover{
+color: red;
+  }
+  footer {
+    background-color: #007bff; /* Bootstrap primary color */
+}
+
+footer a {
+    text-decoration:none;
+}
+
+footer a:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+footer h5 {
+    font-weight: bold; /* Make heading bold */
+}
+
+</style>
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height: 80px;">
+  <div class="container-fluid">
+    <a class="navbar-brand " im  href="index.html"><img src="B Images/home loggo.png" alt="" width="140" height="110"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white fs-4 p-3" aria-current="page"   href="index.html"><img src="B Images/home icon.png" style="vertical-align: middle;height: 28;" >Home</a>
+        </li>
+        <br>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active text-white fs-4 p-3" aria-current="page" href="About project.html"><img width="23" height="19" style="vertical-align: baseline;" src="https://img.icons8.com/ios-filled/20/about.png" alt="about"/>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white  fs-4 p-3" href="variety.html"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/thanksgiving.png" alt="thanksgiving"/>Foods</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white  fs-4 p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <img src="B Images/login icon.png"  width="25" height="22" alt=""> Login pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="admin.html"><img width="18" height="17" style="vertical-align: middle;" src="https://img.icons8.com/ios-glyphs/20/administrator-male.png" alt="administrator-male"/>Admin login</a></li>
+            <li><a class="dropdown-item" href="boostrap login.html"><img width="17" height="18" src="https://img.icons8.com/fluency-systems-filled/20/user.png" alt="user"/>User login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="register.html"><img src="B Images/register icon.png"  width="17" height="18" alt="">Register</a></li>
+          </ul>
+          <li class="nav-item">
+              <a class="nav-link text-white  fs-4 p-3" href="contact.html"><img src="B Images/contact.png" alt="" width="22" height="22">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white  fs-4 p-3" href="cart.html"><img src="B Images/cart.icon.png" alt="" width="22" height="22">Cart</a>
+            </li>
+             </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" list="suggestions" multiple pattern="[A-Za-z]+" placeholder="Search for Products" spellcheck="true" autocomplete="on" autofocus aria-label="Search">
+
+        <datalist style="visibility: hidden;" id="suggestions">
+          <option value="pepper pongal">
+            <option value="idly">
+              <option value="dosa">
+                <option value="curd rice">
+                <option value="Muttun biriyani">
+                  <option value="chicken biriyani">
+                    <option value="fish fry">
+                    <option value="chicken noodles">
+                      <option value="naan">
+                        <option value="manchurian">
+                          <option value="pizza">
+                            <option value="sushi">
+                              <option value="samosa">
+                                <option value="Tempura">
+                  
+        </datalist>
+        
+       
+<button type="button"  class="btn btn-outline-secondary text-white" style="background-color: green;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Search Results</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    You searched for the dish 
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Okay</button>
+    </div>
+  </div>
+</div>
+</div>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<section class="bg-warning text-center p-3">
+  <h4>Our restaurants offer a diverse variety of foods from different countries of India :</h4>
+</section>
+
+  <br>
+  <h2 class="text-danger" style="text-align: center;">Indian Foods</h2>
+  <br>
+<div class="container">
+    <div class="row">
+              <div class="col-md-2" style="padding-bottom: 25px;">
+                <div class="card" style="width: 18rem;">
+                    <img src="B Images/butter chicken.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Butter chicken</h5>
+                      <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Creamy and mildly spiced chicken curry.</p>
+                      <strong style="padding-left: 15%;">Price per plate: ₹250</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★★(5.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light" type="submit" style="height: 5%; width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#butter">
+                        Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="butter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Butter chicken is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 18rem;margin-left: 150px;">
+                    <img src="B Images/naan&roti.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Naan & Roti</h5>
+                      <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Various types of flatbreads and it look like Chappathis.</p>
+                      <strong style="padding-left: 15%;">Price per pieces: ₹40</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#naan">
+                        Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="naan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Naan & Roti is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-md-2">
+                <div class="card" style="width: 18rem;margin-left: 300px;margin-right: 200px;">
+                    <img src="B Images/2 punar poli.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Puran Poli</h5>
+                      <p class="card-text" style="text-align: center; font-size: 15px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sweet flatbread stuffed  jaggery .</p>
+                      <strong style="padding-left: 15%;">Price per pieces: ₹50</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.2)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#poli">
+                        Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="poli" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Puran Poli is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 18rem;margin-left: 420px;">
+                    <img src="B Images/1 idly.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Idly</h5>
+                      <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Steamed rice cakes with coconut chutney and sambar.</p>
+                      <strong style="padding-left: 15%;">Price per pieces: ₹20</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#idly">
+                        Add To Cart <img width="25" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="idly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Idly is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+<br>
+<br>
+<br>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link fs-2" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link fs-2" href="#">1</a></li>
+                <li class="page-item"><a class="page-link fs-2" href="#">2</a></li>
+                <li class="page-item"><a class="page-link fs-2" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link fs-2" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+<br>
+<br>
+            <h2 class="text-info" style="text-align: center;">Chinese Foods</h2>
+            <br>
+<div class="container">
+    <div class="row">
+              <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="B Images/chicken noodles.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Chicken noodles</h5>
+                      <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Stir-fried noodles with vegetables or chicken.</p>
+                      <strong style="padding-left: 15%;">Price per plate: ₹120</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#noodles">
+                        Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="noodles" tabindex="-1" aria-labelledby="butter" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="butter">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Chicken noodles is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;margin-left: 200px;">
+                  <img src="B Images/1 fried rice.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Fried rice</h5>
+                    <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">rice with vegetables & chicken.</p>
+                    <strong style="padding-left: 15%;">Price per plate: ₹150</strong>
+                    <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                    <span style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#fried">
+                      Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="fried" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Fried rice is added to your cart
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+
+         
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;margin-left: 300px;">
+                <img src="B Images/1 manchurian.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;color:  #4CAF50;"> Manchurian</h5>
+                  <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Fried couliflower with sauce.</p>
+                  <strong style="padding-left: 15%;">Price per plate: ₹175</strong>
+                  <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★★(5.0)</p>
+                  <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#manchu">
+                    Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="manchu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Manchurian is added to your cart
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link fs-2" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link fs-2" href="#">1</a></li>
+            <li class="page-item"><a class="page-link fs-2" href="#">2</a></li>
+            <li class="page-item"><a class="page-link fs-2" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link fs-2" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+<br>
+<br>
+        <h2 class="text-warning" style="text-align: center;"> Italian Foods</h2>
+        <br>
+        <div class="container">
+            <div class="row">
+                      <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="B Images/pizza.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Pizza</h5>
+                              <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> pizzas with Indian toppings like paneer,cheese & chicken.</p>
+                              <strong style="padding-left: 15%;">Price per plate: ₹200</strong>
+                              <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.2)</p>
+                              <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#pizza">
+                                Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/> <form action=""></form> 
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pizza" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Pizza is added to your cart
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <div class="card" style="width: 18rem;margin-left: 150px;">
+                          <img src="B Images/1 pasta.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Pasta</h5>
+                            <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> veges with Indian spices & creamy sauces.</p>
+                            <strong style="padding-left: 15%;">Price per plate: ₹180</strong>
+                            <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.0)</p>
+                            <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#pasta">
+                              Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="pasta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Pasta is added to your cart
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+      
+
+                  <div class="card" style="width: 18rem;margin-left: 220px; height: 30%;">
+                    <img src="B Images/lasanga.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Lasagna</h5>
+                      <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Indian-style lasagna with spiced vegetables or meat.</p>
+                      <strong style="padding-left: 15%;">Price per pieces: ₹70</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#lasanga">
+      Add ToCart<img width="20" height="22" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="lasanga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Lasagna is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link fs-2" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link fs-2" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link fs-2" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link fs-2" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link fs-2" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              </div>
+<br>
+<br>
+    <h2 class="text-danger" style="text-align: center;">  Japanese Foods</h2>
+    <br>
+        <div class="container">
+            <div class="row">
+                      <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="B Images/sushi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Sushi</h5>
+                              <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Occasionally offered in fusion form, like paneer sushi or masala sushi rolls.</p>
+                              <strong style="padding-left: 15%;">Price per plate: ₹280</strong>
+                              <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★★(5.0)</p>
+                              <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#sushi">
+                                Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sushi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Sushi is added to your cart
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+        
+
+                    <div class="col-md-3">
+                      <div class="card" style="width: 18rem;margin-left: 150px;">
+                          <img src="B Images/1 Tempura.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Tempura</h5>
+                            <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">fried Prawn with soya sause</p>
+                            <strong style="padding-left: 15%;">Price per plate: ₹350</strong>
+                            <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.4)</p>
+                            <span style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#temp">
+                              Add To Cart <img width="24" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="temp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Tempura is added to your cart
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;margin-left: 300px;">
+                        <img src="B Images/meat balls.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Meat balls</h5>
+                          <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Tasty,crispy & spicy meatballs was an awesome snack.</p>
+                          <strong style="padding-left: 15%;">Price per plate: ₹450</strong>
+                          <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                          <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#meatballs">
+                            Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="meatballs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content"> 
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Meat balls is added to your cart
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+    
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link fs-2" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link fs-2" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  </div>
+                <br>
+                <br>
+                <h2 class="text-primary" style="text-align: center;">Soup</h2>
+                <br>
+      <div class="container">
+        <div class="row">
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="B Images/tomato soup.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Tomato soup</h5>
+                          <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> A  tangy soup made from fresh tomatoes, flavored with Indian spices like cumin, pepper.</p>
+                          <strong style="padding-left: 15%;">Price per bowl: ₹90</strong>
+                          <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.0)</p>
+                          <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#tomato">
+                            Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="tomato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Tomato soup is added to your cart
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>    
+
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;margin-left: 100px;">
+                        <img src="B Images/pepper rasam.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Pepper rasam</h5>
+                          <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">  spiced heavily with black pepper, known for its digestive and medicinal properties, often uesd as a soup or with rice.</p>
+                          <strong style="padding-left: 15%;">Price per bowl: ₹130</strong>
+                          <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★★(5.0)</p>
+                          <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#pepper">
+                            Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="pepper" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Pepper rasam is added to your cart
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+    
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;margin-left: 300px;">
+                        <img src="B Images/chicken soup.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Chicken soup</h5>
+                          <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> A light, spiced chicken broth that's mildly flavored with ginger, garlic, and Indian spices, often served as an appetizer.</p>
+                          <strong style="padding-left: 15%;">Price per bowl: ₹180</strong>
+                          <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                          <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#csoup">
+                            Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="csoup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Chicken soup is added to your cart
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+    
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link fs-2" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link fs-2" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link fs-2" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                <br>
+                <br>
+
+            <h2 class="text-warning" style="text-align: center;">Snacks</h2>
+            <br>
+<div class="container" >
+    <div class="row" >
+              <div class="col-md-3" style="padding-bottom: 100px;">
+                <div class="card" style="width: 18rem;">
+                    <img src="B Images/1 panipuri.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Pani Puri</h5>
+                      <p class="card-text" style="text-align: center;font-size: 14px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Crisp puris filled with spiced water and tamarind chutney.</p>
+                      <strong style="padding-left: 15%;">Price per plate: ₹50</strong>
+                      <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★☆(4.0)</p>
+                      <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#pani">
+                        Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="pani" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Pani Puri is added to your cart
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;margin-left: 100px;">
+                  <img src="B Images/1 pav bhaji.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Pav Bhaji</h5>
+                    <p class="card-text" style="text-align: center; font-size: 12px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Spiced vegetable mashed bread.</p>
+                    <strong style="padding-left: 15%;">Price per plate: ₹70</strong>
+                    <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★☆☆(3.2)</p>
+                    <span  style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#pav">
+                      Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="pav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Pav Bhaji is added to your cart
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;margin-left: 300px;">
+                <img src="B Images/samosa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;color:  #4CAF50;">Samosa</h5>
+                  <p class="card-text" style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Deep-fried pastry filled with spiced potatoes and peas.</p>
+                  <strong style="padding-left: 15%;">Price per pieces: ₹45</strong>
+                  <p class="card-text" style="color: gold;font-size: 25px;text-align: center;">★★★★★(5.0)</p>
+                  <span    style="font-size: 50px;">	&#9829;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button"   class="bg-success btn text-light  " type="submit" style=" width: 55%;text-align: center;padding: 0px 12px;"  data-bs-toggle="modal" data-bs-target="#samosa">
+                    Add To Cart<img width="28" height="25" src="https://img.icons8.com/ios-filled/25/add-shopping-cart.png" alt="add-shopping-cart"/><form action=""></form> 
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="samosa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Samosa is added to your cart
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <nav aria-label="Page navigation example" style="margin-left: 315px;">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link fs-4 bg-primary text-white" href="#" >
+                Login pages &#8594;
+              </a>
+            </li>
+            <br>
+            <li class="page-item"><a class="page-link fs-4 bg-primary text-white" href="boostrap login.html">User Login</a></li>
+            <li class="page-item"><a class="page-link fs-4 bg-primary text-white" href="admin.html" style="cursor: not-allowed;">Admin Login</a></li>
+            <li class="page-item"><a class="page-link fs-4 bg-primary text-white" href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      <br>
+      <br>
+        
+       <br>
+   <footer class="bg-primary text-white mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: info@indianrestaurant.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Main St,Chennai,India</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3">
+                  <img width="25" height="25" src="https://img.icons8.com/ios-filled/25/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+                  </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" width="24" height="24" alt="Facebook"/>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" width="24" height="24" alt="Instagram"/>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" width="24" height="24" alt="Twitter"/>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="projectbootstrap.html" class="text-white">Home</a></li>
+                    <li><a href="About project.html" class="text-white">About</a></li>
+                    <li><a href="variety.html" class="text-white">Foods</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Indian Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

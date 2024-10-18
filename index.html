@@ -1,0 +1,297 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+  input[type="search"] {
+    list-style: none;
+  }
+  #suggestions:hover{
+    display: none;
+    content-visibility:hidden;
+  }
+  footer {
+    background-color: #007bff; /* Bootstrap primary color */
+}
+
+footer a {
+    text-decoration:none;
+}
+
+footer a:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+footer h5 {
+    font-weight: bold; /* Make heading bold */
+}
+
+</style>
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height: 80px;">
+    <div class="container-fluid">
+      <a class="navbar-brand " im  href="index.html"><img src="B Images/home loggo.png" alt="" width="140" height="110"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white fs-4 p-3" aria-current="page"   href="index.html"><img src="B Images/home icon.png" height="28" style="vertical-align: middle;" >Home</a>
+          </li>
+          <br>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link active text-white fs-4 p-3" aria-current="page" href="About project.html"><img width="23" height="19" style="vertical-align: baseline;" src="https://img.icons8.com/ios-filled/20/about.png" alt="about"/>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white  fs-4 p-3" href="variety.html"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/thanksgiving.png" alt="thanksgiving"/>Foods</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white  fs-4 p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <img src="B Images/login icon.png"  width="25" height="22" alt=""> Login pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="admin.html"><img width="18" height="17" style="vertical-align: middle;" src="https://img.icons8.com/ios-glyphs/20/administrator-male.png" alt="administrator-male"/>Admin login</a></li>
+              <li><a class="dropdown-item" href="boostrap login.html"><img width="17" height="18" src="https://img.icons8.com/fluency-systems-filled/20/user.png" alt="user"/>User login</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="register.html"><img src="B Images/register icon.png"  width="17" height="18" alt="">Register</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link text-white  fs-4 p-3" href="contact.html"><img src="B Images/contact.png" alt="" width="22" height="22">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fs-4 p-3" href="cart.html"><img src="B Images/cart.icon.png" alt="" width="22" height="22">Cart</a>
+              </li>
+               </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" list="suggestions" multiple pattern="[A-Za-z]+" placeholder="Search for Products" spellcheck="true" autocomplete="on" autofocus aria-label="Search">
+
+          <datalist style="visibility: hidden;" id="suggestions">
+            <option value="veg foods">
+            <option value="non veg foods">
+            <option value="pepper pongal">
+              <option value="idly">
+                <option value="dosa">
+                  <option value="curd rice">
+                  <option value="Muttun biriyani">
+                    <option value="chicken biriyani">
+                      <option value="fish fry">
+                      <option value="chicken noodles">
+                    
+          </datalist>
+          
+         
+<button type="button"  class="btn btn-outline-secondary text-white" style="background-color: green;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search Results</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      You searched for the ....
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="B Images/home ambience.jpg" class="d-block w-100" alt="..." width="100%" height="75%">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class=" text-bolder" style="color: white;">Ambience</h3>
+          <p class=" fw-bolder fs-4" style="color:magenta;">This is our Restaurent Ambience.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="B Images/home cooking.jpg" class="d-block w-100" alt="..." width="100%" height="75%">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="text-info text-bolder">Cooking Area</h3>
+          <p class="text-light  fw-bolder fs-4 ">This is our chef cooking a delicious food.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="B Images/home img.jpg" class="d-block w-100" alt="..." width="95%" height="82%">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class=" text-bolder" style="color:springgreen";>Table Counter</h3>
+          <p class=" fw-bolder fs-4" style="color: coral;">The people at restaurent were enjoying food.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+  <center>
+    <section>
+    <h2 class="text-success">Veg Foods</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+  <div class="card " style="width: 18rem;">
+    
+    <img src="B Images/Pepper pongal.webp.jpg" class="card-img-top img-fluid h-20" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Pepper pongal</h5>
+      <p class="card-text">lorem ipsum.</p>
+      <a href="variety.html" class="btn btn-primary">View Details</a>
+    </div>
+  </div>
+  </div>
+
+
+ <div class="col-md-3">
+  <div class="card" style="width: 18rem;">
+    <img src="B Images/idly.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title  fw-bold">Idly</h5>
+      <p class="card-text">lorem ipsum.</p>
+      <a href="variety.html" class="btn btn-primary">View Details</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/dosa.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Dosa</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/curd rice.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Curd rice</h5>
+        <p class="card-text">lorem ipsum.</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <h2 class="text-danger">Non-Veg Foods</h2>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/chicken biriyani.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Chicken biriyani</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/1 mutton biriyani.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Mutton biriyani</h5>
+        <p class="card-text">lorem ipsum.</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/fishfry.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Fish fry</h5>
+        <p class="card-text">lorem ipsum.</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="B Images/chicken noodles.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  fw-bold">Chicken noodles</h5>
+        <p class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+        <a href="variety.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+        </div>
+  <br>
+  <br>
+  <br>
+      </section>
+  <a href="About project.html" class="btn btn-primary" style="width: 250px; text-align: center; font-size: 25px;">Nextpage &#8594;  </a>
+    <br>
+   <br>
+   <br>
+   <footer class="bg-primary text-white mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: info@indianrestaurant.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Main St,Chennai,India</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3">
+                  <img width="25" height="25" src="https://img.icons8.com/ios-filled/25/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+                  </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"  width="24" height="24" alt="Facebook"/>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"  width="24" height="24" alt="Instagram"/>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"  width="24" height="24" alt="Twitter"/>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="projectbootstrap.html" class="text-white">Home</a></li>
+                    <li><a href="About project.html" class="text-white">About</a></li>
+                    <li><a href="variety.html" class="text-white">Foods</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Indian Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
